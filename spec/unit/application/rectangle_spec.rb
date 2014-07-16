@@ -16,8 +16,6 @@ describe 'Rectangle' do
     expect(frame).to receive(:repaint)
     canvas.initialize_frame frame
     canvas.add rectangle
-    expect(graphics).to receive(:drawLine).with(1,3,2,4)
-    expect(graphics).to receive(:setColor).with(Color.black)
     canvas.paint(graphics)
   end
 end

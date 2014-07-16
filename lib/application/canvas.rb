@@ -3,7 +3,7 @@ class Canvas < javax.swing.JPanel
   attr_reader :lines
   def initialize
     super
-    @lines = []
+    @shapes = []
     @frame = javax.swing.JFrame.new("Canvas")
     @frame.setDefaultCloseOperation(javax.swing.JFrame::EXIT_ON_CLOSE)
     @frame.setSize(800, 600)
@@ -18,17 +18,15 @@ class Canvas < javax.swing.JPanel
     super(graphics)
     paint graphics
   end
-
-  def add line
-    @lines << line
+  def add_shape shape
+    @shapes << shape
   end
   def render
     @frame.repaint
   end
   def paint graphics
-    @lines.each { |line|
-    graphics.setColor line.color
-    graphics.drawLine line.x1,line.x2,line.y1,line.y2}
+    @shapes.each { |shape|
+    shape.render graphics}
   end
 end
 

@@ -9,10 +9,7 @@ class Line
     @y2 = y2
     @color = color
   end
-  def draw canvas
-     canvas.add self
-     canvas.render
-  end
+
   def render graphics
       graphics.setColor @color
       graphics.drawLine @x1,@y1,@x2,@y2

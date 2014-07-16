@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/line'
+require_relative '../lib/application'
 
-Line.new
+#Application.new

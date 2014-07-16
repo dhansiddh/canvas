@@ -1,6 +1,6 @@
 puts "#{RUBY_PLATFORM}"
 class Canvas < javax.swing.JPanel
-  attr_reader :lines
+  attr_reader :shapes , :frame
   def initialize
     super
     @shapes = []
@@ -9,8 +9,6 @@ class Canvas < javax.swing.JPanel
     @frame.setSize(800, 600)
     @frame.setVisible(true)
     @frame.add(self)
-    @frame.validate
-    @frame.repaint
   end
 
 
@@ -18,15 +16,17 @@ class Canvas < javax.swing.JPanel
     super(graphics)
     paint graphics
   end
+
   def add_shape shape
     @shapes << shape
-  end
-  def render
+    @frame.validate
     @frame.repaint
   end
+
   def paint graphics
     @shapes.each { |shape|
-    shape.render graphics}
+      shape.render graphics
+    }
   end
 end
 

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca1bbd79-c394-4f7f-8bde-bc2e7741cc11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/unit/application/canvas_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/application/line.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/unit/application/line_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/app" afterPath="$PROJECT_DIR$/bin/app" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/application/rectangle.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/unit/application/rectangle_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/application.rb" afterPath="$PROJECT_DIR$/lib/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/canvas.iml" afterPath="$PROJECT_DIR$/.idea/canvas.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/application/canvas.rb" afterPath="$PROJECT_DIR$/lib/application/canvas.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/application/delete_me_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/application/delete_me_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/application/delete_me_spec.rb" afterPath="$PROJECT_DIR$/spec/unit/application/delete_me_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/application/canvas_spec.rb" afterPath="$PROJECT_DIR$/spec/unit/application/canvas_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/application/line.rb" afterPath="$PROJECT_DIR$/lib/application/line.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="canvas.iws" />
@@ -24,11 +22,11 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/canvas@Line__canvas.coverage" NAME="Line: canvas Coverage Results" MODIFIED="1405503595481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
-    <SUITE FILE_PATH="coverage/canvas@Canvas_foo__canvas.coverage" NAME="Canvas foo: canvas Coverage Results" MODIFIED="1405507428123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
+    <SUITE FILE_PATH="coverage/canvas@Canvas_foo__canvas.coverage" NAME="Canvas foo: canvas Coverage Results" MODIFIED="1405507938253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@line.coverage" NAME="line Coverage Results" MODIFIED="1405501470499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@Canvas_should_store_the_line_to_canvas__canvas.coverage" NAME="Canvas should store the line to canvas: canvas Coverage Results" MODIFIED="1405505282571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@Canvas__canvas.coverage" NAME="Canvas: canvas Coverage Results" MODIFIED="1405501201810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
-    <SUITE FILE_PATH="coverage/canvas@application.coverage" NAME="line Coverage Results" MODIFIED="1405496679455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="canvas" />
+    <SUITE FILE_PATH="coverage/canvas@application.coverage" NAME="application Coverage Results" MODIFIED="1405509252159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@canvas.coverage" NAME="canvas Coverage Results" MODIFIED="1405507099345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/application" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@Line_should_draw_a_line_on_canvas__canvas.coverage" NAME="Line should draw a line on canvas: canvas Coverage Results" MODIFIED="1405505018493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
     <SUITE FILE_PATH="coverage/canvas@Run_spec__line_spec___canvas.coverage" NAME="Run spec 'line_spec': canvas Coverage Results" MODIFIED="1405502514965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="canvas" />
@@ -49,8 +47,18 @@
       <file leaf-file-name="canvas.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/application/canvas.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.06888361" vertical-offset="179" max-vertical-offset="630">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.42755345" vertical-offset="75" max-vertical-offset="615">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rectangle.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/application/rectangle.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,8 +67,8 @@
       <file leaf-file-name="canvas_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/unit/application/canvas_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="450">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="450">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -70,7 +78,17 @@
         <entry file="file://$PROJECT_DIR$/spec/unit/application/line_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rectangle_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/unit/application/rectangle_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -79,8 +97,8 @@
       <file leaf-file-name="line.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/application/line.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -89,8 +107,8 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -100,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/bin/app">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -121,10 +139,13 @@
       <list>
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/spec/unit/application/delete_me_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/application.rb" />
         <option value="$PROJECT_DIR$/spec/unit/application/line_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/unit/application/canvas_spec.rb" />
         <option value="$PROJECT_DIR$/lib/line.rb" />
+        <option value="$PROJECT_DIR$/lib/application/rectangle.rb" />
+        <option value="$PROJECT_DIR$/lib/application/line.rb" />
+        <option value="$PROJECT_DIR$/spec/unit/application/canvas_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/unit/application/rectangle_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/application.rb" />
         <option value="$PROJECT_DIR$/lib/application/canvas.rb" />
       </list>
     </option>
@@ -302,43 +323,7 @@
       <recent name="$PROJECT_DIR$/lib/application" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Canvas foo: canvas">
-    <configuration default="false" name="Line: canvas" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="canvas" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/unit/application/line_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Line" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Ruby.application">
     <configuration default="false" name="Line should draw a line on canvas: canvas" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="canvas" />
@@ -471,6 +456,28 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="application" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="canvas" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/application.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -555,19 +562,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Line: canvas" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Line should draw a line on canvas: canvas" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Canvas foo: canvas" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.canvas" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Canvas should store the line to canvas: canvas" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Line should draw a line on canvas: canvas" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Canvas foo: canvas" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.canvas" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Canvas should store the line to canvas: canvas" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.application" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Canvas foo: canvas" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.canvas" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Canvas should store the line to canvas: canvas" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Line should draw a line on canvas: canvas" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Line: canvas" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.application" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Canvas foo: canvas" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.canvas" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Canvas should store the line to canvas: canvas" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Line should draw a line on canvas: canvas" />
       </list>
     </recent_temporary>
   </component>
@@ -734,50 +741,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/unit/application/line_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/app">
+    <entry file="file://$PROJECT_DIR$/spec/unit/application/rectangle_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="822">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/unit/application/canvas_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="450">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/application/line.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/application/rectangle.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/application/canvas_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="450">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/application/canvas.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.06888361" vertical-offset="179" max-vertical-offset="630">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42755345" vertical-offset="75" max-vertical-offset="615">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -8,7 +8,7 @@ class Canvas < javax.swing.JPanel
     @frame.setDefaultCloseOperation(javax.swing.JFrame::EXIT_ON_CLOSE)
     @frame.setSize(800, 600)
     @frame.setVisible(true)
-    #@frame.add(self)
+    @frame.add(self)
     @frame.validate
     @frame.repaint
   end
@@ -17,8 +17,6 @@ class Canvas < javax.swing.JPanel
   def paintComponent(graphics)
     super(graphics)
     paint graphics
-
-
   end
 
   def add line
@@ -28,8 +26,9 @@ class Canvas < javax.swing.JPanel
     @frame.repaint
   end
   def paint graphics
-    @lines.each { |line| graphics.drawLine line.x1,line.x2,line.y1,line.y2}
-    @lines.each { |line| graphics.setColor line.color}
+    @lines.each { |line|
+    graphics.setColor line.color
+    graphics.drawLine line.x1,line.x2,line.y1,line.y2}
   end
 end
 

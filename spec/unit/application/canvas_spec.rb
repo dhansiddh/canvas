@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Canvas' do
 
-  xit 'should store the line to canvas' do
+  it 'should store the line to canvas' do
     line = Line.new(1,2,3,4,Color.black)
     canvas = Canvas.new
     canvas.add(line)
@@ -14,7 +14,7 @@ describe 'Canvas' do
     expect(frame).to receive(:setDefaultCloseOperation).with(javax.swing.JFrame::EXIT_ON_CLOSE)
     expect(frame).to receive(:setSize).with(800,600)
     expect(frame).to receive(:setVisible).with(true)
-    # expect(frame).to receive(:add).with(self)
+    expect(frame).to receive(:add).with(any_args)
     expect(frame).to receive(:validate)
     expect(frame).to receive(:repaint)
 

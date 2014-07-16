@@ -1,7 +1,5 @@
 require 'spec_helper'
 
-describe Application do
-  it "fails" do
-    #fail
-  end
+describe Line do
+  it
 end

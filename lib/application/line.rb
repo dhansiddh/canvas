@@ -16,7 +16,6 @@ class Line
   end
 
   def isClicked? click_x ,click_y
-    puts "line pe kyu click keya "
   end
 end
 

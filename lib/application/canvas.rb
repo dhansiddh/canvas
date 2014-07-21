@@ -36,35 +36,40 @@ class Canvas < javax.swing.JPanel
   end
 
   def mousePressed(javaEvent)
-    @mouse_state = true
     offset = 20
     @buttons.each { |button|
-      if button.receive_click javaEvent.getX , javaEvent.getY - offset
-        @frame.validate
-        @frame.repaint
+      if button.pressed javaEvent.getX, javaEvent.getY - offset, self
       end
     }
   end
 
   def mouseReleased(javaEvent)
-    @mouse_state = false
-    @frame.validate
-    @frame.repaint
+    offset = 20
+    @buttons.each { |button|
+      if button.released javaEvent.getX, javaEvent.getY - offset, self
+      end
+    }
   end
 
   def mouseClicked(javaEvent)
     offset = 20
     puts "Click: #{javaEvent.getX} #{javaEvent.getY - offset}"
     @buttons.each { |button|
-      button.receive_click javaEvent.getX , javaEvent.getY - offset
+      button.receive_click javaEvent.getX, javaEvent.getY - offset
 
     }
   end
 
   def render graphics
     @buttons.each { |button|
-      button.render graphics,@mouse_state
+      button.render graphics
     }
+  end
+
+  def event_listner
+    puts "i m inside event_listen"
+    @frame.validate
+    @frame.repaint
   end
 
 end

@@ -4,6 +4,7 @@ require_relative "application/canvas"
 require_relative "application/line"
 require_relative "application/rectangle"
 require_relative "application/button"
+require_relative "application/button3d"
 import java.awt.Color
 
 class Application
